@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#1280e0">
+  <title>Patroclo Go · UMNG</title>
+  <link rel="stylesheet" href="public/style.css">
+  <script defer src="public/three.js"></script>
+  <script defer src="public/map.js"></script>
+  <script defer src="public/catalog.js"></script>
+  <script defer src="public/local.js"></script>
+  <script defer src="public/app.js"></script>
+</head>
+<body>
+  <div id="app">
+    <header class="topbar"><div class="wrap"><div class="brand"><img src="public/patroclo.png" alt="" class="brand-logo"><span>Patroclo <strong>Go</strong><small>UMNG · Calle 100</small></span></div></div></header>
+    <main class="wrap welcome">
+      <section class="intro" aria-labelledby="intro-title">
+        <img src="public/patroclo.png" alt="Patroclo, mascota de la UMNG">
+        <div><p class="overline">UNIVERSIDAD MILITAR NUEVA GRANADA</p>
+        <h1 id="intro-title">Descubre tu C100</h1>
+        <p>Explora el campus y encuentra las actividades y servicios de Bienestar Universitario y COASE.</p></div>
+      </section>
+      <section class="card access" aria-labelledby="access-title">
+        <h2 id="access-title">Iniciar sesión</h2>
+        <div class="switch" aria-label="Tipo de acceso">
+          <button type="button" aria-pressed="true">Estudiante</button>
+          <button type="button" aria-pressed="false">Administración</button>
+        </div>
+        <form id="login-form">
+          <label><span id="user-label">Código estudiantil</span><input name="user" inputmode="numeric" pattern="[0-9]+" autocomplete="username" required maxlength="64"></label>
+          <label>Contraseña<input name="password" type="password" autocomplete="current-password" required maxlength="128"></label>
+          <button type="submit" class="primary">Ingresar <span aria-hidden="true">→</span></button>
+          <p role="status" class="notice"></p>
+        </form>
+      </section>
+    </main></div>
+</body>
+</html>
